@@ -1,0 +1,506 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+.container{
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+header{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 20px;
+}
+.logo{
+    color: black;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+a{
+    color: inherit;
+    cursor: pointer;
+}
+.menu a{
+    color: gray;
+    font-size: 18px;
+    font-family: ; 
+}
+.menu a:hover{
+    color: rebeccapurple;
+    transition: 0.5s;
+}
+.has_dropdown {
+    position: relative;
+}
+.dropdown > .has_dropdown > .dropdown{
+    top: 100%;
+    left: 100%;
+    margin: 0;
+}
+.dropdown {
+    width: max-content;
+    height: max-content;
+    max-width: 250px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;  
+    margin-top: 20px;
+    box-shadow: 0 2px 10px -2px rgb(0 0 0 / 10%);
+    transition: 0.4s ease;
+}
+.dropdown li{
+    font-size: 17px;
+    padding: 10px;
+}
+.dropdown li a{
+    color: black;
+}
+.has_dropdown:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    border-top: 2px solid rebeccapurple;
+    top: 100%;
+}
+.dropdown > .has_dropdown:hover > .dropdown{
+    opacity: 1;
+    visibility: visible;
+    border-top: 2px solid rebeccapurple; 
+}
+.dropdown li:hover{
+    background-color: rgb(207, 206, 206);
+}
+/*section1*/
+.section1{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: rgba(111, 66, 193, 0.1);
+    overflow: hidden;
+    border-bottom-right-radius: 50%
+}
+.section1-row{
+    height: 250px;
+    margin-top: 200px;
+    display: flex;
+}
+.section1-left{
+    width: 50%;
+    padding-right: 50px;
+}
+.section1-left span{
+    color: rgba(111, 66, 193, 0.5);
+    font-size: 12px;
+}
+.section1-left h1{
+    color: rebeccapurple;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.section1-left p{
+    color: gray;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.button{
+    display: inline;
+    color: white !important;
+    padding: 10px 15px;
+    border: 1px solid rebeccapurple;
+    background-color: rebeccapurple;
+    border-radius: 20px;
+}
+.section1-right{
+    width: 60%;
+    padding-left: 50px;
+}
+.section1-right img{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 50% ;
+}
+/*section2*/
+.section2{
+    height: 420px;
+    width: 1300px;
+    margin-top: 100px;
+}
+.section2-top{
+    height: 80px;
+    text-align: center;
+}
+.title{
+    color: rgb(111, 66, 193);
+    font-size: 30px;
+    padding: 15px 0;
+}
+p{
+    color: gray;
+    font-size: 17px;
+}
+.row{
+    width: 1140px;
+    height: 135px;
+    display: flex;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.data{
+    width: 350px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+}
+.data , .icon{
+    color: purple;
+    font-size: 25px;
+}
+.data , .number{
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+    padding: 25px 0;
+}
+.data , .label{
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*section3*/
+.section3{
+    width: 1300px;
+    height: 550px;
+}
+.row3-left{
+    width: 500px;
+    position: relative;
+    height: 360px;
+}
+.video{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.video a{
+    padding: 15px;
+    background-color: purple;
+    color: white;
+}
+.row3-right{
+    width: 500px;
+    text-align: left;
+    margin-left: 100px;
+}
+.row3-right , .firstp{
+    padding: 20px 0 !important;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.list i{
+    color: purple;
+    padding: 0 10px;
+}
+.list{
+    padding-bottom: 30px;
+}
+.list li{
+    display: flex;
+    padding: 10px 0;
+}
+/*section4*/
+.section4{
+    height: 100px;
+    width: 1180px;
+    margin: 50px 0;
+}
+.section4-row{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row1{
+    width: 250px;
+    height: 45px;
+    display: flex;
+    gap: 10px;
+}
+.row1 i{
+    font-size: 42px;
+    color: purple;
+}
+.row1 h3{
+    color: purple;
+    font-weight: 700;
+    padding-bottom: 5px ;
+}
+.row1 span{
+    color: gray;
+    font-size: 17px;
+}
+/*section5*/
+.section5{
+    width: 100%;
+    height: 900px;
+    background-color: rgba(111, 66, 193, 0.05);
+}
+.section5-row{
+    width: 100%;
+    display: flex;
+}
+.section5-left{
+    width: 50%;
+    display: flex;
+}
+.left1, .left2{
+    height: 700px;
+    width: 280px;
+    margin-top: 150px;
+}
+.left2{
+    margin-top: 70px !important;
+}
+
+.left1-home, .left1-mask{
+    width: 255px;
+    height: 300px; 
+    box-shadow: rgb(0 0 0 / 5%) 0px 15px 30px 0px;
+    border-radius: 10px;
+}
+.icon5{
+    background-color: rgb(207, 200, 200);
+    width: 255px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(111, 66, 193);
+}
+.left-info{
+    width: 255px;
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+}
+.left-info h3{
+    color: rgb(111, 66, 193);
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.left-info p{
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.left1-mask{
+    padding-top: 20px;
+}
+.section5-right{
+    margin-top: 150px;
+}
+.section5-right, .secondp{
+    padding: 20px 0;
+}
+/*section6*/
+.section6{
+    height: 700px;
+    width: 100%;
+}
+.section6-top{
+    height: 160px;
+    text-align: center;
+    margin-top: 100px;
+}
+.section6 h2{
+    padding: 20px 0;
+}
+.section6-row{
+    height: 450px;
+    display: flex;
+}
+.row6-left{
+    width: 50%;
+    height: 400px;
+    display: flex;
+}
+.do{
+    width: 300px;
+}
+.do-list li , .avoid-list li{
+    display: flex;
+    gap: 10px;
+    padding: 12px 0;
+}
+.do-list i{
+    color: green;
+}.avoid-list i{
+    color: red;
+}
+/*section7*/
+.section7{
+    width: 100%;
+    height: 800px;
+    background-color: rgba(111, 66, 193, 0.05);
+}
+.section7-top{
+    height: 130px;
+    text-align: center;
+    padding-top: 100px;
+}
+.section7-row{
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 100px;
+}
+.covid{
+    width: 570px;
+    height: 165px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 10%) 0px 15px 30px 0px;
+    display: flex;
+}
+.info{
+    padding: 20px 10px;
+    line-height: 1.7;
+}
+h3{
+    color: purple;
+    padding: 10px 0;
+}
+.bottom{
+    height: 100px;
+    width: 800px;
+    margin-left: 200px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-info{
+    width: 600px;
+}
+.bottom strong{
+    color: purple;
+}
+/*section8*/
+.section8{
+    height: 670px;
+    background-color: white;
+}
+.section8-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+.box{
+    height: 300px;
+    width: 340px;
+    position: relative;
+}
+.part1{
+    height: 150px;
+    width: 300px;
+}
+.part1 span{
+    position: absolute;
+    bottom: -5%;
+    left: 35%;
+    border: 1px solid purple;
+    background-color: purple;
+    padding: 10px;
+    color: white;
+}
+.tag{
+    padding-top: 25px;
+    color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tag span{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.tag, .first{
+    gap: 15px;
+}
+footer{
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 500px;
+    width: 100%;
+}
+.footer-row{
+    display: flex;
+    gap: 20px;
+}
+.footer-row-first{
+    width: 300px;
+}
+.footer-row-first p{
+    color: black !important;
+    line-height: 1.5;
+}
+.p1{
+    padding-bottom: 20px;
+}
+
+.footer-social{
+    padding-top: 80px;
+    display: flex;
+    gap: 25px;
+    color: purple;
+}
+.footer-social a:hover{
+    color: black;
+}
+.footer-row-second{
+    width: 250px;
+    text-align: center;
+}
+h5{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 15px;
+}
+.row-second li{
+    color: purple;
+    padding: 15px ;
+    font-size: 18px;
+}
+.row-second li:hover{
+    color: black;
+}
